@@ -25,7 +25,8 @@
     "node": ">=0.6.8"
   },
   "scripts": {
-    "doc": "jsdoc2md lib/graphviz.js lib/deps/graph.js lib/deps/node.js lib/deps/edge.js > API.md"
+    "doc": "jsdoc2md lib/graphviz.js lib/deps/graph.js lib/deps/node.js lib/deps/edge.js > API.md",
+    "test": "node tests"
   },
   "devDependencies": {
     "jsdoc-to-markdown": "6.0.1"

@@ -1,0 +1,276 @@
+digraph "g" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+subgraph "u1" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "1" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "2" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "3" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "4" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "5" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "6" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "7" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "8" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+}
+
+subgraph "u3" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "a" [ height =0.3, shape =circle, width =0.3 ];
+  "b" [ height =0.3, shape =circle, width =0.3 ];
+  "c" [ height =0.3, shape =circle, width =0.3 ];
+  "d" [ height =0.3, shape =circle, width =0.3 ];
+  "e" [ height =0.3, shape =circle, width =0.3 ];
+  "f" [ height =0.3, shape =circle, width =0.3 ];
+  "g" [ height =0.3, shape =circle, width =0.3 ];
+  "h" [ height =0.3, shape =circle, width =0.3 ];
+}
+
+subgraph "u5" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u7" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u15" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u23" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u31" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u39" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u47" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u55" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u63" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+}
+
+subgraph "u71" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "i" [ height =0.3, shape =circle, width =0.3 ];
+  "I";
+  "K";
+  "j" [ height =0.3, shape =circle, width =0.3 ];
+  "J";
+  "L";
+  "A" [ height =0.3, shape =diamond, width =0.3 ];
+  "B" [ height =0.3, shape =diamond, width =0.3 ];
+  "i" -> "I" [ color = "#ff0000:#0000ff", dir =none ];
+  "i" -> "K" [ color = "#ff0000:#0000ff", dir =none ];
+  "j" -> "J" [ color = "#ff0000:#0000ff", dir =none ];
+  "j" -> "L" [ color = "#ff0000:#0000ff", dir =none ];
+  "A" -> "i" [ color = "#ff0000:#0000ff", dir =none ];
+  "B" -> "j" [ color = "#ff0000:#0000ff", dir =none ];
+}
+
+subgraph "u89" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "k" [ height =0.3, shape =circle, width =0.3 ];
+  "I";
+  "K";
+  "l" [ height =0.3, shape =circle, width =0.3 ];
+  "J";
+  "L";
+  "C" [ height =0.3, shape =diamond, width =0.3 ];
+  "D" [ height =0.3, shape =diamond, width =0.3 ];
+  "k" -> "I" [ color = "#00ff00:#ffff00", dir =none ];
+  "k" -> "K" [ color = "#00ff00:#ffff00", dir =none ];
+  "l" -> "J" [ color = "#00ff00:#ffff00", dir =none ];
+  "l" -> "L" [ color = "#00ff00:#ffff00", dir =none ];
+  "C" -> "k" [ color = "#00ff00:#ffff00", dir =none ];
+  "D" -> "l" [ color = "#00ff00:#ffff00", dir =none ];
+}
+
+subgraph "u107" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "m" [ height =0.3, shape =circle, width =0.3 ];
+  "M";
+  "O";
+  "n" [ height =0.3, shape =circle, width =0.3 ];
+  "N";
+  "P";
+  "E" [ height =0.3, shape =diamond, width =0.3 ];
+  "F" [ height =0.3, shape =diamond, width =0.3 ];
+  "m" -> "M" [ color = "#00ffff:#000000", dir =none ];
+  "m" -> "O" [ color = "#00ffff:#000000", dir =none ];
+  "n" -> "N" [ color = "#00ffff:#000000", dir =none ];
+  "n" -> "P" [ color = "#00ffff:#000000", dir =none ];
+  "E" -> "m" [ color = "#00ffff:#000000", dir =none ];
+  "F" -> "n" [ color = "#00ffff:#000000", dir =none ];
+}
+
+subgraph "u125" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "o" [ height =0.3, shape =circle, width =0.3 ];
+  "M";
+  "O";
+  "p" [ height =0.3, shape =circle, width =0.3 ];
+  "N";
+  "P";
+  "G" [ height =0.3, shape =diamond, width =0.3 ];
+  "H" [ height =0.3, shape =diamond, width =0.3 ];
+  "o" -> "M" [ color = "#ff00ff:#ffffff", dir =none ];
+  "o" -> "O" [ color = "#ff00ff:#ffffff", dir =none ];
+  "p" -> "N" [ color = "#ff00ff:#ffffff", dir =none ];
+  "p" -> "P" [ color = "#ff00ff:#ffffff", dir =none ];
+  "G" -> "o" [ color = "#ff00ff:#ffffff", dir =none ];
+  "H" -> "p" [ color = "#ff00ff:#ffffff", dir =none ];
+}
+
+subgraph "u143" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "q" [ height =0.3, shape =circle, width =0.3 ];
+  "Q";
+  "U";
+  "r" [ height =0.3, shape =circle, width =0.3 ];
+  "R";
+  "V";
+  "s" [ height =0.3, shape =circle, width =0.3 ];
+  "S";
+  "W";
+  "t" [ height =0.3, shape =circle, width =0.3 ];
+  "T";
+  "X";
+  "I" [ height =0.3, shape =diamond, width =0.3 ];
+  "J" [ height =0.3, shape =diamond, width =0.3 ];
+  "K" [ height =0.3, shape =diamond, width =0.3 ];
+  "L" [ height =0.3, shape =diamond, width =0.3 ];
+  "q" -> "Q" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "q" -> "U" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "r" -> "R" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "r" -> "V" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "s" -> "S" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "s" -> "W" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "t" -> "T" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "t" -> "X" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "I" -> "q" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "J" -> "r" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "K" -> "s" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "L" -> "t" [ color = "#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+}
+
+subgraph "u177" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "u" [ height =0.3, shape =circle, width =0.3 ];
+  "Q";
+  "U";
+  "v" [ height =0.3, shape =circle, width =0.3 ];
+  "R";
+  "V";
+  "w" [ height =0.3, shape =circle, width =0.3 ];
+  "S";
+  "W";
+  "x" [ height =0.3, shape =circle, width =0.3 ];
+  "T";
+  "X";
+  "M" [ height =0.3, shape =diamond, width =0.3 ];
+  "N" [ height =0.3, shape =diamond, width =0.3 ];
+  "O" [ height =0.3, shape =diamond, width =0.3 ];
+  "P" [ height =0.3, shape =diamond, width =0.3 ];
+  "u" -> "Q" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "u" -> "U" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "v" -> "R" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "v" -> "V" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "w" -> "S" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "w" -> "W" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "x" -> "T" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "x" -> "X" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "M" -> "u" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "N" -> "v" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "O" -> "w" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+  "P" -> "x" [ color = "#ff00ff:#ffffff:#00ffff:#000000", dir =none ];
+}
+
+subgraph "u211" {
+  graph [ bgcolor = "#808080", rankdir =LR ];
+  "10" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "20" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "30" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "40" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "50" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "60" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "70" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "80" [ height =0.3, shape =circle, style = "invis", width =0.3 ];
+  "Q" [ height =0.3, shape =diamond, width =0.3 ];
+  "R" [ height =0.3, shape =diamond, width =0.3 ];
+  "S" [ height =0.3, shape =diamond, width =0.3 ];
+  "T" [ height =0.3, shape =diamond, width =0.3 ];
+  "U" [ height =0.3, shape =diamond, width =0.3 ];
+  "V" [ height =0.3, shape =diamond, width =0.3 ];
+  "W" [ height =0.3, shape =diamond, width =0.3 ];
+  "X" [ height =0.3, shape =diamond, width =0.3 ];
+  "Q" -> "10" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "R" -> "20" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "S" -> "30" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "T" -> "40" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "U" -> "50" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "V" -> "60" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "W" -> "70" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+  "X" -> "80" [ color = "#ff00ff:#ffffff:#00ffff:#000000:#00ff00:#ffff00:#ff0000:#0000ff", dir =none ];
+}
+
+  "1";
+  "2";
+  "3";
+  "4";
+  "5";
+  "6";
+  "7";
+  "8";
+  "a";
+  "b";
+  "c";
+  "d";
+  "e";
+  "f";
+  "g";
+  "h";
+  "A";
+  "B";
+  "C";
+  "D";
+  "E";
+  "F";
+  "G";
+  "H";
+  "1" -> "a" [ color = "#0000ff", dir =none ];
+  "2" -> "b" [ color = "#ff0000", dir =none ];
+  "3" -> "c" [ color = "#ffff00", dir =none ];
+  "4" -> "d" [ color = "#00ff00", dir =none ];
+  "5" -> "e" [ color = "#000000", dir =none ];
+  "6" -> "f" [ color = "#00ffff", dir =none ];
+  "7" -> "g" [ color = "#ffffff", dir =none ];
+  "8" -> "h" [ color = "#ff00ff", dir =none ];
+  "a" -> "A" [ color = "#0000ff", dir =none ];
+  "a" -> "B" [ color = "#0000ff", dir =none ];
+  "b" -> "A" [ color = "#ff0000", dir =none ];
+  "b" -> "B" [ color = "#ff0000", dir =none ];
+  "c" -> "C" [ color = "#ffff00", dir =none ];
+  "c" -> "D" [ color = "#ffff00", dir =none ];
+  "d" -> "C" [ color = "#00ff00", dir =none ];
+  "d" -> "D" [ color = "#00ff00", dir =none ];
+  "e" -> "E" [ color = "#000000", dir =none ];
+  "e" -> "F" [ color = "#000000", dir =none ];
+  "f" -> "E" [ color = "#00ffff", dir =none ];
+  "f" -> "F" [ color = "#00ffff", dir =none ];
+  "g" -> "G" [ color = "#ffffff", dir =none ];
+  "g" -> "H" [ color = "#ffffff", dir =none ];
+  "h" -> "G" [ color = "#ff00ff", dir =none ];
+  "h" -> "H" [ color = "#ff00ff", dir =none ];
+}
+

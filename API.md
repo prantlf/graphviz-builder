@@ -43,6 +43,7 @@
     * [.getNodeAttribut(name)](#Graph+getNodeAttribut) ⇒ <code>Void</code>
     * [.setEdgeAttribut(name, value)](#Graph+setEdgeAttribut)
     * [.getEdgeAttribut(name)](#Graph+getEdgeAttribut) ⇒ <code>Void</code>
+    * [.setOptions(type)](#Graph+setOptions)
     * [.to_dot()](#Graph+to_dot) ⇒ <code>String</code>
 
 <a name="new_Graph_new"></a>
@@ -227,6 +228,24 @@ Get a global edge attribut
 | Param | Type | Description |
 | --- | --- | --- |
 | name | <code>String</code> | The attribut name |
+
+<a name="Graph+setOptions"></a>
+
+### graph.setOptions(type)
+Sets common options for the graph, nodes and edges.
+
+**Kind**: instance method of [<code>Graph</code>](#Graph)  
+**Api**: public
+
+Options :
+  - use : layout to use (dot, neato, fdp, twopi, circo, osage)
+  - G :
+  - N :
+  - E :  
+
+| Param | Type | Description |
+| --- | --- | --- |
+| type | <code>Object</code> | The options |
 
 <a name="Graph+to_dot"></a>
 

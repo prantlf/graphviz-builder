@@ -1,5 +1,6 @@
+var { readFileSync } = require('fs');
+var assert = require('assert');
 var graphviz = require('../lib/graphviz');
-
 
 //create a graph
 var g = graphviz.digraph("G");
@@ -11,24 +12,25 @@ g.addNode("c");
 g.addNode("d");
 g.addNode("e");
 
-
 //add relations
 g.addEdge("a", "b");
 g.addEdge("a", "c");
 g.addEdge("c", "b");
 g.addEdge("a", "d");
 
-g.output( "png", "remove_node_original.png" );
-
+var expected = readFileSync(__filename.replace(/.js$/, '_original.dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())
 
 //soft removeNode
 //will remove the node, but not the edges
 g.removeNode("e");
-g.output( "png", "remove_node_soft.png" );
+
+var expected = readFileSync(__filename.replace(/.js$/, '_soft.dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())
 
 //hard removeNode
 //removes the node and the edgesfrom and to the node
 g.removeNode("c", true);
 
-// Print graph source text
-console.log(g.to_dot())
+var expected = readFileSync(__filename.replace(/.js$/, '_hard.dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())

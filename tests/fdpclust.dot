@@ -1,0 +1,25 @@
+graph "G" {
+subgraph "clusterA" {
+subgraph "clusterC" {
+  "C";
+  "D";
+  "C" -- "D";
+}
+
+  "a";
+  "b";
+  "a" -- "b";
+}
+
+subgraph "clusterB" {
+  "d";
+  "f";
+  "d" -- "f";
+}
+
+  "e";
+  "d" -- "D";
+  "e" -- "clusterB";
+  "clusterC" -- "clusterB";
+}
+

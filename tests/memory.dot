@@ -1,0 +1,6 @@
+digraph "G" {
+  "Hello" [ color = "blue", style = "filled" ];
+  "World";
+  "Hello" -> "World" [ color = "red" ];
+}
+

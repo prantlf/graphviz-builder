@@ -1,3 +1,5 @@
+var { readFileSync } = require('fs');
+var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
 // Create digraph G
@@ -12,8 +14,8 @@ g.addNode( "World" );
 // Add edge between the two nodes
 var e = g.addEdge( n1, "World" );
 
-// Generate a PNG output
-g.output( {
+// Set common options
+g.setOptions( {
 	"type":"png",
 	"use":"dot",
 	"N" : {
@@ -28,3 +30,6 @@ g.output( {
 		"label" : "Example"
 	}
 }, "hello.png" );
+
+var expected = readFileSync(__filename.replace(/js$/, 'dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())

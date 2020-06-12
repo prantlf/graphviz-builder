@@ -1,3 +1,5 @@
+var { readFileSync } = require('fs');
+var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
 // Create digraph G
@@ -10,5 +12,5 @@ g.from( "A" ).to( "F" );
 g.from( "C" ).to( "F" );
 g.from( "E" ).to( "F" );
 
-// Print graph source text
-console.log(g.to_dot())
+var expected = readFileSync(__filename.replace(/js$/, 'dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())

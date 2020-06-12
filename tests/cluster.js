@@ -1,3 +1,5 @@
+var { readFileSync } = require('fs');
+var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
 // digraph G {
@@ -56,5 +58,5 @@ g.getNode('start').set('shape', 'Mdiamond');
 g.getNode('end').set('shape', 'Msquare');
 // }
 
-// Print graph source text
-console.log(g.to_dot())
+var expected = readFileSync(__filename.replace(/js$/, 'dot'), 'utf-8')
+assert.strictEqual(g.to_dot().trim(), expected.trim())

@@ -1,0 +1,8 @@
+require("./cluster")
+require("./compound")
+require("./fdpclust")
+require("./hello")
+require("./hello_world")
+require("./memory")
+require("./remove_node")
+require("./switch")
