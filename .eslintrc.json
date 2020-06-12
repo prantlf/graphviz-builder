@@ -6,27 +6,34 @@
   },
   "plugins": ["promise"],
   "rules": {
-    "global-require": "off",
-    "vars-on-top": "off",
+    "camelcase": "off",
     "dot-notation": "off",
-    "guard-for-in": "off",
     "func-names": "off",
-    "one-var": "off",
-    "no-underscore-dangle": "off",
-    "no-plusplus": "off",
-    "no-process-exit": "off",
+    "global-require": "off",
+    "guard-for-in": "off",
+    "handle-callback-err": ["error", "^(err|error)$"],
+    "id-length": "off",
     "no-bitwise": "off",
     "no-extend-native": "off",
-    "handle-callback-err": ["error", "^(err|error)$"],
-    "camelcase": ["error", { "properties": "never" }],
-    "no-use-before-define": ["error", "nofunc"],
     "no-mixed-requires": ["warn", { "grouping": true }],
-    "id-length": ["warn", { "min": 2, "exceptions": ["i", "_"] }],
-    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-multi-assign": "off",
     "no-param-reassign": ["warn"],
-    "no-unused-vars": ["error", { "varsIgnorePattern": "^_.+", "argsIgnorePattern": "^_" }]
+    "no-plusplus": "off",
+    "no-process-exit": "off",
+    "no-restricted-syntax": "off",
+    "no-underscore-dangle": "off",
+    "no-unused-expressions": ["error", { "allowShortCircuit": true }],
+    "no-unused-vars": ["error", { "varsIgnorePattern": "^_.+", "argsIgnorePattern": "^_" }],
+    "no-use-before-define": ["error", "nofunc"],
+    "no-useless-concat": "off",
+    "no-var": "off",
+    "one-var": "off",
+    "prefer-destructuring": "off",
+    "prefer-rest-params": "off",
+    "prefer-template": "off",
+    "vars-on-top": "off"
   },
   "parserOptions": {
-    "ecmaVersion": 2018
+    "ecmaVersion": 5
   }
 }

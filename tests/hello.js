@@ -1,4 +1,4 @@
-var { readFileSync } = require('fs');
+var readFileSync = require('fs').readFileSync;
 var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
@@ -12,7 +12,7 @@ var n1 = g.addNode( "Hello" );
 g.addNode( "World" );
 
 // Add edge between the two nodes
-var e = g.addEdge( n1, "World" );
+g.addEdge( n1, "World" );
 
 // Set common options
 g.setOptions( {

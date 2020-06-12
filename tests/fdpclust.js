@@ -1,4 +1,4 @@
-var { readFileSync } = require('fs');
+var readFileSync = require('fs').readFileSync;
 var assert = require('assert');
 var graphviz = require('../lib/graphviz');
   

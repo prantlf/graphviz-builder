@@ -1,4 +1,4 @@
-var { readFileSync } = require('fs');
+var readFileSync = require('fs').readFileSync;
 var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
@@ -7,7 +7,7 @@ var g = graphviz.digraph("G");
 
 // Add node (ID: Hello)
 var n1 = g.addNode( "Hello", {"color" : "blue", "shape" : "Mdiamond"} );
-//n1.set( "color", "blue" );
+// n1.set( "color", "blue" );
 n1.set( "style", "filled" );
 
 // Add node (ID: World)

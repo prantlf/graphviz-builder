@@ -26,9 +26,17 @@
   },
   "scripts": {
     "doc": "jsdoc2md lib/graphviz.js lib/deps/graph.js lib/deps/node.js lib/deps/edge.js > API.md",
+    "lint": "eslint --cache --max-warnings=0 lib tests",
+    "fix": "eslint --fix --cache --max-warnings=0 lib tests",
     "test": "node tests"
   },
   "devDependencies": {
+    "eslint": "7.2.0",
+    "eslint-config-airbnb-base": "^14.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
     "jsdoc-to-markdown": "6.0.1"
   }
 }
