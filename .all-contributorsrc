@@ -1,6 +1,6 @@
 {
-  "projectName": "node-graphviz",
-  "projectOwner": "glejeune",
+  "projectName": "graphviz-builder",
+  "projectOwner": "prantlf",
   "repoType": "github",
   "repoHost": "https://github.com",
   "files": [

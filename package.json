@@ -1,21 +1,23 @@
 {
-  "name": "graphviz",
-  "version": "0.0.9",
-  "author": "Gregoire Lejeune <gregoire.lejeune@free.fr> (http://algorithmique.net/)",
-  "description": "Node.js interface to the GraphViz graphing tool",
-  "homepage": "http://algorithmique.net/",
+  "name": "graphviz-builder",
+  "version": "0.0.1",
+  "description": "Generates the source graph script for Graphviz.",
   "license": "MIT",
+  "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)",
   "contributors": [
     "Gregoire Lejeune (http://algorithmique.net)",
-    "Mathieu Ravaux (http://mathieuravaux.com)",
-    "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)"
+    "Mathieu Ravaux (http://mathieuravaux.com)"
   ],
+  "homepage": "https://github.com/prantlf/graphviz-builder#readme",
+  "bugs": "https://github.com/prantlf/graphviz-builder/issues",
   "repository": {
     "type": "git",
-    "url": "http://github.com/glejeune/node-graphviz.git"
+    "url": "http://github.com/prantlf/graphviz-builder.git"
   },
   "keywords": [
     "graphviz",
+    "graph",
+    "builder",
     "dot"
   ],
   "files": [
