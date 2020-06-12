@@ -7,7 +7,8 @@
   "license": "MIT",
   "contributors": [
     "Gregoire Lejeune (http://algorithmique.net)",
-    "Mathieu Ravaux (http://mathieuravaux.com)"
+    "Mathieu Ravaux (http://mathieuravaux.com)",
+    "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)"
   ],
   "repository": {
     "type": "git",
@@ -33,10 +34,13 @@
     "fix": "eslint --fix --cache --max-warnings=0 lib tests",
     "build": "rollup -c",
     "test": "node tests",
-    "all": "npm run lint && npm run build && npm run doc && npm test"
+    "all": "npm run lint && npm run build && npm run doc && npm test",
+    "contributors:add": "all-contributors add",
+    "contributors:generate": "all-contributors generate"
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "13.0.0",
+    "all-contributors-cli": "6.16.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "14.2.0",
     "eslint-config-prettier": "6.11.0",
