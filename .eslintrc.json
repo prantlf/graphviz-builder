@@ -16,7 +16,6 @@
     "no-bitwise": "off",
     "no-extend-native": "off",
     "no-mixed-requires": ["warn", { "grouping": true }],
-    "no-multi-assign": "off",
     "no-param-reassign": ["warn"],
     "no-plusplus": "off",
     "no-process-exit": "off",

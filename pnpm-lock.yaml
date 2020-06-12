@@ -2132,13 +2132,13 @@ packages:
     resolution:
       integrity: sha512-HgS+X6zAztGa9zIK3Y3LXuJes33Lz9x+YyTxgrkIdabu2vqcGOWwdfCpf1hWLRrd553wd4QCDf6BBO6FfdsRiQ==
 specifiers:
-  '@rollup/plugin-commonjs': ^13.0.0
+  '@rollup/plugin-commonjs': 13.0.0
   eslint: 7.2.0
-  eslint-config-airbnb-base: ^14.2.0
-  eslint-config-prettier: ^6.11.0
-  eslint-plugin-import: ^2.21.2
-  eslint-plugin-node: ^11.1.0
-  eslint-plugin-promise: ^4.2.1
+  eslint-config-airbnb-base: 14.2.0
+  eslint-config-prettier: 6.11.0
+  eslint-plugin-import: 2.21.2
+  eslint-plugin-node: 11.1.0
+  eslint-plugin-promise: 4.2.1
   jsdoc-to-markdown: 6.0.1
   rollup: 2.15.0
   rollup-plugin-terser: 6.1.0
