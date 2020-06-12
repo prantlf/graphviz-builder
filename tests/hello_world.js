@@ -18,5 +18,5 @@ g.addEdge(n1, "World")
   .set("label", "A label")
   .set("fontsize", "10");
 
-// Generate a PNG output
-g.output( "png", "hello_world.png" );
+// Print graph source text
+console.log(g.to_dot())

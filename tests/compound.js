@@ -1,5 +1,4 @@
-var util = require('util'),
-	graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
 
 // Create digraph G
 var g = graphviz.digraph("G");
@@ -11,4 +10,5 @@ g.from( "A" ).to( "F" );
 g.from( "C" ).to( "F" );
 g.from( "E" ).to( "F" );
 
-g.render( "png", "compound.png" );
+// Print graph source text
+console.log(g.to_dot())

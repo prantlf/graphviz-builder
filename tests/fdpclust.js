@@ -1,5 +1,4 @@
-var util = require('util'),
-  graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
   
 // graph G {
 var g = graphviz.graph("G");
@@ -29,4 +28,6 @@ g.addEdge( clusterC, clusterB )
 // }
 
 g.use = "fdp"
-g.output( "png", "fdpclust.png" ); 
+
+// Print graph source text
+console.log(g.to_dot())

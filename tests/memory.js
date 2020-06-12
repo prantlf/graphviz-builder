@@ -1,5 +1,4 @@
-var util = require('util'),
-	graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
 
 // Create digraph G
 var g = graphviz.digraph("G");
@@ -16,10 +15,5 @@ g.addNode( "World" );
 var e = g.addEdge( n1, "World" );
 e.set( "color", "red" );
 
-// Generate a dot output in-memory
-g.render( "png", function(render) {
-	process.stdout.write( render );
-} );
-
-// Generate a PNG output in-file
-g.output( "png", "memory.png" );
+// Print graph source text
+console.log(g.to_dot())

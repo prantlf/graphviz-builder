@@ -1,5 +1,4 @@
-var util = require('util'),
-    graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
 
 
 //create a graph
@@ -30,6 +29,6 @@ g.output( "png", "remove_node_soft.png" );
 //hard removeNode
 //removes the node and the edgesfrom and to the node
 g.removeNode("c", true);
-g.output( "png", "remove_node_hard.png" );
 
+// Print graph source text
 console.log(g.to_dot())

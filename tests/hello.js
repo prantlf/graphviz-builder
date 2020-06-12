@@ -1,5 +1,4 @@
-var util = require('util'),
-	graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
 
 // Create digraph G
 var g = graphviz.digraph("G");

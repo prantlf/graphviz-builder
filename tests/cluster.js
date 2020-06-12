@@ -1,5 +1,4 @@
-var util = require('util'),
-  graphviz = require('../lib/graphviz');
+var graphviz = require('../lib/graphviz');
 
 // digraph G {
 var g = graphviz.digraph('G');
@@ -57,6 +56,5 @@ g.getNode('start').set('shape', 'Mdiamond');
 g.getNode('end').set('shape', 'Msquare');
 // }
 
-g.output('png', 'cluster.png', function(code, out, err) {
-  console.log(err);
-});
+// Print graph source text
+console.log(g.to_dot())
