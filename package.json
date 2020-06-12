@@ -1,6 +1,6 @@
 {
   "name": "graphviz-builder",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "description": "Generates the source graph script for Graphviz.",
   "license": "MIT",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)",
@@ -43,7 +43,7 @@
     "build": "npm run build:js && npm run build:ts",
     "test": "node tests",
     "coverage": "nyc node tests",
-    "all": "npm run lint && npm run build && npm run doc && npm run coverage",
+    "all": "npm run build && npm run lint && npm run doc && npm run coverage",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
