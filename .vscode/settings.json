@@ -3,6 +3,9 @@
     "**/.git": true,
     "**/.DS_Store": true,
     ".eslintcache": true,
+    ".nyc_output": true,
+    "pnpm-lock.yaml": true,
+    "coverage": true,
     "dist": true
   }
 }
