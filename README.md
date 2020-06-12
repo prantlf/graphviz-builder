@@ -5,9 +5,7 @@
 [![codecov](https://codecov.io/gh/prantlf/graphviz-builder/branch/master/graph/badge.svg)](https://codecov.io/gh/prantlf/graphviz-builder)
 [![Dependency Status](https://david-dm.org/prantlf/graphviz-builder.svg)](https://david-dm.org/prantlf/graphviz-builder)
 [![devDependency Status](https://david-dm.org/prantlf/graphviz-builder/dev-status.svg)](https://david-dm.org/prantlf/graphviz-builder#info=devDependencies)
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors-)
-<!-- ALL-CONTRIBUTORS-BADGE:END --> 
+[![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
 
 Generates the source graph script as input for Graphviz (`dot`), which in turn can generate the graph image.
 
