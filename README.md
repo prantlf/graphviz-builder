@@ -7,7 +7,7 @@
 [![devDependency Status](https://david-dm.org/prantlf/graphviz-builder/dev-status.svg)](https://david-dm.org/prantlf/graphviz-builder#info=devDependencies)
 [![All Contributors](https://img.shields.io/badge/all_contributors-10-orange.svg?style=flat-square)](#contributors)
 
-Generates the source graph script as input for Graphviz (`dot`), which in turn can generate the graph image.
+Generates the source graph script as input for [Graphviz] (`dot`), which in turn can generate the graph image.
 
 This project originated as a fork of [node-graphviz] to offer an easy integration to web browsers and JavaScript and TypeScript environments like [Node.js] and [Deno]. Features:
 
@@ -95,7 +95,7 @@ If you write a plain HTML page, insert the `graphviz-builder` script pointing wi
 <script src=https://unpkg.com/graphviz-builder@0.0.1/dist/index.min.js></script>
 <script src=node_modules/graphviz-builder/dist/index.min.js></script>
 <script>
-const { digraph } = window.graphvizBuilder
+const { digraph } = window.graphvizBuilder;
 // ...the same code from the Node.js example above
 </script>
 ```
@@ -140,6 +140,7 @@ Thanks goes to these wonderful people ([emoji key](https://github.com/kentcdodds
 This project follows the [all-contributors] specification. Contributions of any kind welcome!
 
 [all-contributors]: https://github.com/kentcdodds/all-contributors#readme
+[Graphviz]: https://graphviz.org/
 [node-graphviz]: http://github.com/glejeune/node-graphviz#readme
 [graphviz-cli]: https://github.com/prantlf/graphviz-cli#readme
 [graphviz-webcomponent]: https://github.com/prantlf/graphviz-webcomponent#readme
@@ -148,4 +149,4 @@ This project follows the [all-contributors] specification. Contributions of any 
 [NPM]: https://docs.npmjs.com/cli/npm
 [Yarn]: https://classic.yarnpkg.com/docs/cli/
 [PNPM]: https://pnpm.js.org/pnpm-cli
-[API]: API.md
+[API]: API.md#classes

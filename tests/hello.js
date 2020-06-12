@@ -16,19 +16,19 @@ g.addEdge( n1, "World" );
 
 // Set common options
 g.setOptions( {
-	"type":"png",
-	"use":"dot",
-	"N" : {
-		"color":"blue",
-		"shape":"Mdiamond"
-	},
-	"E" : {
-		"color" : "red",
-		"label" : "Say"
-	},
-	"G" : {
-		"label" : "Example"
-	}
+  "type":"png",
+  "use":"dot",
+  "N" : {
+    "color":"blue",
+    "shape":"Mdiamond"
+  },
+  "E" : {
+    "color" : "red",
+    "label" : "Say"
+  },
+  "G" : {
+    "label" : "Example"
+  }
 }, "hello.png" );
 
 var expected = readFileSync(__filename.replace(/js$/, 'dot'), 'utf-8')
