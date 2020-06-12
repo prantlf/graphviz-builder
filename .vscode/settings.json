@@ -2,11 +2,11 @@
   "files.exclude": {
     "**/.git": true,
     "**/.DS_Store": true,
-    ".eslintcache": true,
-    ".nyc_output": true,
-    ".tslintcache": true,
-    "pnpm-lock.yaml": true,
-    "coverage": true,
+    "**/.eslintcache": true,
+    "**/.nyc_output": true,
+    "**/.tslintcache": true,
+    "**/pnpm-lock.yaml": true,
+    "**/coverage": true,
     "dist/*.min.*": true,
     "dist/*.map": true
   },

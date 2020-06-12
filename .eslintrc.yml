@@ -29,6 +29,7 @@ rules:
   no-use-before-define: [error, nofunc]
   no-useless-concat: off
   no-var: off
+  object-shorthand: off
   one-var: off
   prefer-destructuring: off
   prefer-rest-params: off

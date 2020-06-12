@@ -1,0 +1,14 @@
+{
+  "name": "graphviz-performance",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "lint": "../node_modules/.bin/eslint --cache --max-warnings=0 .",
+    "fix": "../node_modules/.bin/eslint --fix --cache --max-warnings=0 .",
+    "test": "node compare-hash",
+    "all": "npm run lint && npm test"
+  },
+  "dependencies": {
+    "benchmark": "2.1.4"
+  }
+}
