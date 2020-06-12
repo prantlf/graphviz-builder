@@ -17,10 +17,12 @@
     "graphviz",
     "dot"
   ],
-  "directories": {
-    "lib": "lib"
-  },
+  "files": [
+    "dist",
+    "lib"
+  ],
   "main": "lib/graphviz",
+  "browser": "dist/index.min.js",
   "engines": {
     "node": ">=0.6.8"
   },
@@ -28,15 +30,20 @@
     "doc": "jsdoc2md lib/graphviz.js lib/deps/graph.js lib/deps/node.js lib/deps/edge.js > API.md",
     "lint": "eslint --cache --max-warnings=0 lib tests",
     "fix": "eslint --fix --cache --max-warnings=0 lib tests",
-    "test": "node tests"
+    "build": "rollup -c",
+    "test": "node tests",
+    "all": "npm run lint && npm run build && npm run doc && npm test"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^13.0.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "^14.2.0",
     "eslint-config-prettier": "^6.11.0",
     "eslint-plugin-import": "^2.21.2",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "jsdoc-to-markdown": "6.0.1"
+    "jsdoc-to-markdown": "6.0.1",
+    "rollup": "2.15.0",
+    "rollup-plugin-terser": "6.1.0"
   }
 }

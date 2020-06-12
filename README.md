@@ -12,7 +12,7 @@ Interface to the GraphViz graphing tool
 
 ## SYNOPSIS
 
-A basic example
+A basic example:
 
 ```javascript
 var graphviz = require('graphviz');
@@ -37,8 +37,19 @@ console.log( g.to_dot() );
 
 ## INSTALLATION
 
+Make sure that you have installed [Node.js]. Use your favourite package manager ([NPM], [Yarn] or [PNPM]) to add the `graphviz` module to your project. Add `-D` on the command line if you use a bundler:
+
 ```
-$ npm install graphviz
+npm i graphviz
+yarn add graphviz
+pnpm i graphviz
+```
+
+If you write a plain HTML page, insert the `graphviz` script pointing wither to CDN or to the local filesystem:
+
+```html
+<script src=https://unpkg.com/graphviz@0.0.10/dist/index.min.js></script>
+<script src=node_modules/graphviz/dist/index.min.js></script>
 ```
 
 ## DOCUMENTATION
