@@ -3231,8 +3231,8 @@ packages:
       integrity: sha512-92O1HWEjw27sBfgmXiixJWT5hRBp2eobqXicLtPBIDBhYB+1HpwZlXmbW2luivBJHBzki+7VyCLRtAkScbTBQA==
 specifiers:
   '@rollup/plugin-commonjs': 13.0.0
-  '@typescript-eslint/eslint-plugin': ^3.2.0
-  '@typescript-eslint/parser': ^3.2.0
+  '@typescript-eslint/eslint-plugin': 3.2.0
+  '@typescript-eslint/parser': 3.2.0
   all-contributors-cli: 6.16.0
   eslint: 7.2.0
   eslint-config-airbnb-base: 14.2.0
@@ -3241,7 +3241,7 @@ specifiers:
   eslint-plugin-node: 11.1.0
   eslint-plugin-promise: 4.2.1
   jsdoc-to-markdown: 6.0.1
-  nyc: ^15.1.0
+  nyc: 15.1.0
   rollup: 2.15.0
   rollup-plugin-terser: 6.1.0
-  typescript: ^3.9.5
+  typescript: 3.9.5

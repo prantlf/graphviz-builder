@@ -39,8 +39,9 @@
     "build:js": "rollup -c",
     "build:ts": "tsc --target es5 tests/typings.ts",
     "build": "npm run build:js && npm run build:ts",
-    "test": "nyc node tests",
-    "all": "npm run lint && npm run build && npm run doc && npm test",
+    "test": "node tests",
+    "coverage": "nyc node tests",
+    "all": "npm run lint && npm run build && npm run doc && npm run coverage",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
@@ -50,7 +51,7 @@
       "lcov",
       "text-summary"
     ],
-    "branches": 80,
+    "branches": 90,
     "functions": 90,
     "lines": 95,
     "statements": 95
