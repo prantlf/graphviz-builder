@@ -4,8 +4,16 @@
     "**/.DS_Store": true,
     ".eslintcache": true,
     ".nyc_output": true,
+    ".tslintcache": true,
     "pnpm-lock.yaml": true,
     "coverage": true,
-    "dist": true
+    "dist/*.min.*": true,
+    "dist/*.map": true
+  },
+  "search.exclude": {
+    "dist/*.js": true,
+    "dist/*.mjs": true,
+    "**/node_modules": true,
+    "tests/typings.js": true
   }
 }

@@ -30,26 +30,35 @@
   },
   "scripts": {
     "doc": "jsdoc2md lib/graphviz.js lib/deps/graph.js lib/deps/node.js lib/deps/edge.js > API.md",
-    "lint": "eslint --cache --max-warnings=0 lib tests",
-    "fix": "eslint --fix --cache --max-warnings=0 lib tests",
-    "build": "rollup -c",
+    "lint:js": "eslint --cache --max-warnings=0 --ignore-pattern=tests/typings.js lib tests",
+    "lint:ts": "eslint --cache --max-warnings=0 --ext=.ts --cache-location .tslintcache -c .tslintrc.yml dist tests",
+    "lint": "npm run lint:js && npm run lint:ts",
+    "fix:js": "eslint --fix --cache --max-warnings=0 --ignore-pattern=tests/typings.js lib tests",
+    "fix:ts": "eslint --fix --cache --max-warnings=0 --ext=.ts --cache-location .tslintcache -c .tslintrc.yml dist tests",
+    "fix": "npm run fix:js && npm run fix:ts",
+    "build:js": "rollup -c",
+    "build:ts": "tsc --target es5 tests/typings.ts",
+    "build": "npm run build:js && npm run build:ts",
     "test": "nyc node tests",
     "all": "npm run lint && npm run build && npm run doc && npm test",
     "contributors:add": "all-contributors add",
     "contributors:generate": "all-contributors generate"
   },
   "nyc": {
+    "checkCoverage": true,
     "reporter": [
       "lcov",
       "text-summary"
     ],
-    "branches": 75,
-    "functions": 65,
-    "lines": 90,
-    "statements": 90
+    "branches": 80,
+    "functions": 90,
+    "lines": 95,
+    "statements": 95
   },
   "devDependencies": {
     "@rollup/plugin-commonjs": "13.0.0",
+    "@typescript-eslint/eslint-plugin": "3.2.0",
+    "@typescript-eslint/parser": "3.2.0",
     "all-contributors-cli": "6.16.0",
     "eslint": "7.2.0",
     "eslint-config-airbnb-base": "14.2.0",
@@ -58,8 +67,9 @@
     "eslint-plugin-node": "11.1.0",
     "eslint-plugin-promise": "4.2.1",
     "jsdoc-to-markdown": "6.0.1",
-    "nyc": "^15.1.0",
+    "nyc": "15.1.0",
     "rollup": "2.15.0",
-    "rollup-plugin-terser": "6.1.0"
+    "rollup-plugin-terser": "6.1.0",
+    "typescript": "3.9.5"
   }
 }

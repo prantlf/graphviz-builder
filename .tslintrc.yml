@@ -1,0 +1,15 @@
+extends:
+  - eslint:recommended
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+plugins:
+  - '@typescript-eslint'
+parser: '@typescript-eslint/parser'
+parserOptions:
+  ecmaVersion: 6
+  project: tsconfig.json
+rules:
+  node/no-unsupported-features/es-syntax: off
+  '@typescript-eslint/camelcase': off
+  '@typescript-eslint/naming-convention': off
+  '@typescript-eslint/no-unused-vars': off

@@ -1,7 +1,11 @@
 .DS_Store
 .eslintcache
 .nyc_output
+.tslintcache
 coverage
-dist
+dist/*.js
+dist/*.mjs
+dist/*.map
 node_modules
 npm-debug.log
+tests/typings.js

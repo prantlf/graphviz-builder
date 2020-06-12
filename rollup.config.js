@@ -7,17 +7,35 @@ export default {
     {
       sourcemap: true,
       format: 'esm',
-      file: 'dist/index.min.mjs'
+      file: 'dist/index.min.mjs',
+      plugins: [
+        terser()
+      ]
+    },
+    {
+      sourcemap: true,
+      format: 'esm',
+      file: 'dist/index.mjs'
     },
     {
       sourcemap: true,
       format: 'umd',
       name: 'graphvizBuilder',
       exports: 'named',
-      file: 'dist/index.min.js'
-    }
+      file: 'dist/index.min.js',
+      plugins: [
+        terser()
+      ]
+    },
+    {
+      sourcemap: true,
+      format: 'umd',
+      name: 'graphvizBuilder',
+      exports: 'named',
+      file: 'dist/index.js'
+    },
   ],
   plugins: [
-    commonjs(), terser()
+    commonjs()
   ]
 };
