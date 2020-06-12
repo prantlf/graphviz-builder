@@ -41,6 +41,10 @@ console.log( g.to_dot() );
 $ npm install graphviz
 ```
 
+## DOCUMENTATION
+
+See the [API description](API.md).
+
 ## AUTHORS
 
 * Gregoire Lejeune (http://algorithmique.net)
