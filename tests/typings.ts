@@ -1,6 +1,7 @@
 import { graph, digraph, Graph, Node, Edge } from '../dist/index.js'
 
 const d: Graph = digraph('G')
+const d2: Graph = digraph('G', true)
 const g: Graph = graph('G')
 const n1: Node = g.addNode('Hello', { color: 'blue' });
 const n3: Node = n1.set('style', 'filled');

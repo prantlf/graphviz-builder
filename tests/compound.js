@@ -3,7 +3,7 @@ var assert = require('assert');
 var graphviz = require('../lib/graphviz');
 
 // Create digraph G
-var g = graphviz.digraph("G");
+var g = graphviz.digraph("G", true);
 g.set( "splines", "compound");
 g.from( "A" ).to( "B" ).to( "F" );
 g.from( "A" ).to( "C" ).to( "D" ).to( "F" );

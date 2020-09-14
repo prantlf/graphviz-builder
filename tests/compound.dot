@@ -1,4 +1,4 @@
-digraph "G" {
+strict digraph "G" {
   graph [ splines = "compound" ];
   "A";
   "B";
