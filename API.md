@@ -15,7 +15,7 @@
 <dt><a href="#graph">graph(id)</a> ⇒ <code><a href="#Graph">Graph</a></code></dt>
 <dd><p>Create a new undirected graph</p>
 </dd>
-<dt><a href="#digraph">digraph(id)</a> ⇒ <code><a href="#Graph">Graph</a></code></dt>
+<dt><a href="#digraph">digraph(id, isStrict)</a> ⇒ <code><a href="#Graph">Graph</a></code></dt>
 <dd><p>Create a new directed graph</p>
 </dd>
 </dl>
@@ -380,7 +380,7 @@ Create a new undirected graph
 
 <a name="digraph"></a>
 
-## digraph(id) ⇒ [<code>Graph</code>](#Graph)
+## digraph(id, isStrict) ⇒ [<code>Graph</code>](#Graph)
 Create a new directed graph
 
 **Kind**: global function  
@@ -389,4 +389,5 @@ Create a new directed graph
 | Param | Type | Description |
 | --- | --- | --- |
 | id | <code>String</code> | The graphID |
+| isStrict | <code>Boolean</code> | if the Graph is strict (optional, defaults to `false`) |
 
