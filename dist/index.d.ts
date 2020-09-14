@@ -40,4 +40,4 @@ export interface Graph extends AttributContainer<Graph> {
 }
 
 export function graph (id: string): Graph;
-export function digraph (id: string): Graph;
+export function digraph (id: string, isStrict?: boolean): Graph;
