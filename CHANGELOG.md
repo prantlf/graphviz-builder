@@ -1,3 +1,10 @@
+# [0.1.0](https://github.com/prantlf/graphviz-builder/compare/v0.0.1...v0.1.0) (2020-09-14)
+
+### Features
+
+* Add support for strict digraphs (no duplicate edges) ([adad66c](https://github.com/prantlf/graphviz-builder/commit/adad66c670785b4a8b5f3513294be6114cc74f63))
+* Update typings for the strict digraphs ([7895ae5](https://github.com/prantlf/graphviz-builder/commit/7895ae5c5c950a50446ad9b0ae6cb3c32f453fe6))
+
 ## 0.0.1 (2020-06-12)
 
 This is the first version released after forking the [original project](http://github.com/glejeune/node-graphviz).
