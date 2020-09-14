@@ -58,7 +58,7 @@ pnpm i graphviz-builder
 If you write a plain HTML page, insert the `graphviz-builder` script pointing wither to CDN or to the local filesystem:
 
 ```html
-<script src=https://unpkg.com/graphviz-builder@0.0.1/dist/index.min.js></script>
+<script src=https://unpkg.com/graphviz-builder@0.1.0/dist/index.min.js></script>
 <script src=node_modules/graphviz-builder/dist/index.min.js></script>
 ```
 
@@ -85,14 +85,14 @@ console.log(g.to_dot());
 If you write source code for [Deno], refer to the full URL of `graphviz-builder`:
 
 ```js
-import { digraph } from 'https://unpkg.com/graphviz-builder@0.0.1/dist/index.min.mjs';
+import { digraph } from 'https://unpkg.com/graphviz-builder@0.1.0/dist/index.min.mjs';
 // ...the same code from the Node.js example above
 ```
 
 If you write a plain HTML page, insert the `graphviz-builder` script pointing wither to CDN or to the local filesystem. The AMD module name (and the windows global) is `graphvizBuilder`.:
 
 ```html
-<script src=https://unpkg.com/graphviz-builder@0.0.1/dist/index.min.js></script>
+<script src=https://unpkg.com/graphviz-builder@0.1.0/dist/index.min.js></script>
 <script src=node_modules/graphviz-builder/dist/index.min.js></script>
 <script>
 const { digraph } = window.graphvizBuilder;

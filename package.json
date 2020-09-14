@@ -1,6 +1,6 @@
 {
   "name": "graphviz-builder",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Generates the source graph script for Graphviz.",
   "license": "MIT",
   "author": "Ferdinand Prantl <prantlf@gmail.com> (http://prantlf.tk/)",
